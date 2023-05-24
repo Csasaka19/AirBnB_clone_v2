@@ -35,7 +35,7 @@ def pythoniscool(text='is cool'):
 def number(n):
     """Display only if integer"""
     return "{:d} is a number".format(n)
-    
+
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
@@ -47,12 +47,11 @@ def number_template(n):
 def oddeven_template(n):
     """Display template(HTML) only if n is an integer
     even|odd"""
-    if n %2 == 0:
+    if n % 2 == 0:
         tester = 'even'
     else:
         tester = 'odd'
     return render_template('6-number_odd_or_even.html', n=n, tester=tester)
-   
 
 
 if __name__ == "__main__":
