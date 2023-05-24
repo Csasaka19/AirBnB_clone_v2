@@ -13,10 +13,10 @@ def index():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def display():
+def hbnb():
     """HBNB message"""
     return "HBNB"
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port='5000', debug=True)
+    app.run(host='0.0.0.0', port='5000')
